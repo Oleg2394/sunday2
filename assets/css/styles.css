@@ -594,6 +594,7 @@ Reports Section
  		.header nav{
  			display: flex;
  			font-size: 0.875em; /* 15px */
- 			margin-top: -1.875em; /* 30px */
+ 			margin-top: 0; /* 30px */
+			padding: 0;
  		}
  	}
