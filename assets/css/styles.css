@@ -589,3 +589,11 @@ Reports Section
  			margin-top: 2.500em; /* 40px */
  		}
  	}
+
+ 	@media (max-width: 462px){
+ 		.header nav{
+ 			display: flex;
+ 			font-size: 1.000em; /* 18px */
+ 			margin-top: -1.875em; /* 30px */
+ 		}
+ 	}
