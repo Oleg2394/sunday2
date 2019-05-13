@@ -130,16 +130,16 @@
  		font-size: 2.188em; /* 35px */
  	}
 
- 	.header nav{
+ 	.header-nav{
  		display: flex;
  		font-size: 1.5em; /* 24px*/
  	}
 
- 	.header nav li{
+ 	.header-nav-list{
  		margin: 0 0.938em; /* 15px */
  	}
 
- 	.header nav li:nth-child (1n+2){
+ 	.header-nav-list:nth-child (1n+2){
  		margin-left: 5px;
  	}
 
@@ -188,7 +188,7 @@
  	margin-bottom: 2.5em; /* 40px */
  }
 
- .header-text button{
+ .header-text-button{
  	padding: 1.250em 2.875em; /* 20px 46px  */
  }
 
@@ -202,7 +202,7 @@
  	.tagline-text{
  		font-size: 1.5em; /* 24px */
  	}
- 	.header-text a.btn{
+ 	.header-text .btn{
  		padding: 0.938em 2.5em; /* 15px 40px */
  	}
  }
@@ -241,16 +241,16 @@ Reports Section
 	background-color: #333;
 }
 
-.reports .grid ul {
-	margin:20px;
-}
 
 .reports .grid li.small{
-	flex-basis: 40%;
+	width: calc(40% - 40px);
+	margin: 20px;
+
 }
 
 .reports .grid li.large{
-	flex-basis: 60%;
+	width: calc(60% - 40px);
+	margin: 20px;
 }
 
 .reports-text{
@@ -291,34 +291,41 @@ Reports Section
  		margin-top: 20px;
  	}
 
- 	.certificate .grid li{
+ /*	.certificate .grid li{
  		flex-basis: 33%;
- 	}
+ 		}*/
 
- 	.name{
- 		color: #000;
- 		font-size: 1.125em; /* 18px */
- 		font-weight: 300;
- 		font-style: italic;
- 		margin-bottom: 25px;
- 	}
-
-
- 	@media (max-width: 1000px){
  		.certificate .grid li{
- 			flex-basis: 70%;
- 			margin-bottom: 0.625em; /* 10px */
+ 			margin-right: 20px;
+ 			margin-left: 20px;
  		}
- 		.certificate .grid li:last-child{
- 			margin-bottom: 0;
- 		}
- 	}
 
- 	@media (max-width: 600px){
- 		.certificate .grid li{
- 			flex-basis: 100%;
+
+
+ 		.name{
+ 			color: #000;
+ 			font-size: 1.125em; /* 18px */
+ 			font-weight: 300;
+ 			font-style: italic;
+ 			margin-bottom: 25px;
  		}
- 	}
+
+
+ 		@media (max-width: 1000px){
+ 			.certificate .grid li{
+
+ 				margin-bottom: 0.625em; /* 10px */
+ 			}
+ 			.certificate .grid li:last-child{
+ 				margin-bottom: 0;
+ 			}
+ 		}
+
+ 		@media (max-width: 600px){
+ 			.certificate .grid li{
+ 				flex-basis: 100%;
+ 			}
+ 		}
 
 /*---------------------
  	footer Section
@@ -336,7 +343,7 @@ Reports Section
  		color: #fff;
  	}
 
- 	.footer form{
+ 	.footer-form{
  		display: flex;
  		align-items: center;
  		justify-content: center;
@@ -345,7 +352,7 @@ Reports Section
  		width: 80%;
  	}
 
- 	.footer form input{
+ 	.input{
  		padding: 0.938em; /* 15px */
  		flex: 1;
  		margin-right: 1.875em; /* 30px */
@@ -353,13 +360,13 @@ Reports Section
  		color: #555;
  	}
 
- 	.footer form .btn{
+ 	.footer-form .btn{
  		padding: 1.125em 2.625em; /* 18px 42px */
  	}
 
 
  	@media (max-width: 800px){
- 		.footer form input{
+ 		.input{
  			flex-basis: 100%;
  			margin: 0 0 1.250em 0; /* 20px */
  		}
@@ -372,7 +379,7 @@ Reports Section
  		margin-top: 0.313em; /* 5px */
  		margin-left: 1.250em; /* 20px */
  	}
- 	.master h4 {
+ 	.name {
  		margin-left: 5em; /* 80px */
  	}
 
@@ -403,22 +410,6 @@ Reports Section
  		}
  	}
 
- 	footer h3.title{
- 		color: #000;
- 		text-transform: capitalize; 
- 		font: bold 2em 'Open Sans', sans-serif; /* 32px */
- 		margin-bottom: 2.188em; /* 35px */
- 		text-align: center;
- 	}
-
- 	footer p{
- 		max-width: 60em; /*960px*/
- 		text-align: left;
- 		margin-bottom: 2.188em; /* 35px*/
- 		/*padding: 0 20px;*/
- 		/*line-height: 2;*/
- 	}
-
  	#flex{
  		width: 100%;
  		display: flex;
@@ -436,7 +427,7 @@ Reports Section
  	}
 
  	@media (max-width: 583px){
- 		.header nav{
+ 		.header-nav{
  			display: flex;
  			font-size: 1.125em; /* 18px*/
  		}
@@ -449,7 +440,7 @@ Reports Section
  		margin-left: 6.250em; /* 100px */
  	}
 
- 	.grid button{
+ 	.button-buy{
  		padding: 0.625em 2.5em; /* 10px 40px  */
  		margin-left: 5em;
  	}
@@ -466,16 +457,12 @@ Reports Section
  		}
  	}
 
- 	@media (max-width: 1148px){
- 		.ser-text-mix{
- 			margin-top: 2.5em; /* 40px */
- 		}
- 	}
 
 
- 	@media (max-width: 1305px){
+ 	@media (max-width: 1440px){
  		.certificate .grid li{
- 			flex-basis: 30%;
+ 			
+ 			margin-bottom: 10px;
  		}
  	}
 
@@ -525,7 +512,7 @@ Reports Section
  	}
 
  	@media (max-width: 463px){
- 		.header nav{
+ 		.header-nav{
  			font-size: 16px; /* 18px */
 
  		}
@@ -593,4 +580,17 @@ Reports Section
  	footer {
  		background-image: url(../img/12.jpg);
  		background-repeat: no-repeat;
+ 	}
+
+ 	.video-list   .video{
+ 		width: calc(50% - 40px);
+ 		margin: 20px;
+ 	}
+
+
+ 	@media (max-width: 1200px){
+ 		.video-list   .video{
+ 			width: 100%;
+ 			margin: 20px;
+ 		}
  	}
