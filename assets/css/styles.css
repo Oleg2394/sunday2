@@ -442,7 +442,7 @@ Reports Section
 
  	.button-buy{
  		padding: 0.625em 2.5em; /* 10px 40px  */
- 		margin-left: 5em;
+ 		margin-left: 6em;
  	}
 
  	@media (max-width: 1204px){
