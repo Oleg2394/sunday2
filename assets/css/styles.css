@@ -582,15 +582,6 @@ Reports Section
  		background-repeat: no-repeat;
  	}
 
- 	.video-list   .video{
- 		width: calc(50% - 40px);
- 		margin: 20px;
- 	}
 
 
- 	@media (max-width: 1200px){
- 		.video-list   .video{
- 			width: 100%;
- 			margin: 20px;
- 		}
- 	}
+
