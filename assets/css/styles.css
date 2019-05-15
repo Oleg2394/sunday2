@@ -596,5 +596,9 @@ Reports Section
  	}
 
 
-
+@media (max-width: 865px){
+ 		.ser-text-lep-sum{
+ 			margin-top: 2.5em; /* 40px */
+ 		}
+ 	}
 
