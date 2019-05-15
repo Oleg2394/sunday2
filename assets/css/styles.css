@@ -512,7 +512,7 @@ Reports Section
  		border: 0;
  	}
 
- 	@media (max-width: 891px){
+ 	@media (max-width: 832px){
  		.ser-text-6{
  			margin-top: 2.5em; /* 40px */
  		}
