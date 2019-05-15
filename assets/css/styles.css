@@ -39,7 +39,8 @@
  }
 
  a:hover{
- 	opacity: 1;
+ 	text-decoration: underline;
+
  }
 
  button{
@@ -108,11 +109,12 @@
  	Header
  	-------------*/
 
- 	 	header {
+ 	header {
  		padding-top: 2.188em;
  		background-image: url(../img/1.jpg);
  		background-repeat: no-repeat;
  		position: relative;
+ 		background-size: cover;
  	}
 
  	header:before {
@@ -148,8 +150,8 @@
  		font-size: 1.5em; /* 24px*/
  	}
 
- 	.header-nav-list{
- 		margin: 0 0.938em; /* 15px */
+ 	.header-nav-list:not(:last-child){
+ 		margin-right: 1.876em;
  	}
 
  	.header-nav-list:nth-child (1n+2){
@@ -255,13 +257,13 @@ Reports Section
 }
 
 
-.reports .grid li.small{
+.reports .grid .small{
 	width: calc(40% - 40px);
 	margin: 20px;
 
 }
 
-.reports .grid li.large{
+.reports .grid .large{
 	width: calc(60% - 40px);
 	margin: 20px;
 }
@@ -275,8 +277,8 @@ Reports Section
 }
 
 @media (max-width: 1000px){
-	.reports .grid li.small,
-	.reports .grid li.large{
+	.reports .grid .small,
+	.reports .grid .large{
 		flex-basis: 100%;
 	}
 }
@@ -343,9 +345,6 @@ Reports Section
 /*---------------------
  	footer Section
  	---------------------*/
- 	.footer{
- 		background-image: url(assets/img/12.jpg) repeat-y;
- 	}
 
  	.telefon{
  		float: left;
@@ -455,7 +454,7 @@ Reports Section
 
  	.button-buy{
  		padding: 0.625em 2.5em; /* 10px 40px  */
- 		margin-left: 6em;
+ 		margin-left: 6.250em;
  	}
 
  	@media (max-width: 1204px){
@@ -540,10 +539,6 @@ Reports Section
  	}
 
 
- 	.ser-text{
- 		background-image: "assets/img/карта.png" width="75px" height="59px";
- 	}
-
  	.certificate-text:after{
  		content: " ";  
  		top: 0;
@@ -596,18 +591,18 @@ Reports Section
  	}
 
 
-@media (max-width: 865px){
+ 	@media (max-width: 865px){
  		.ser-text-lep-sum{
  			margin-top: 2.5em; /* 40px */
  		}
  	}
 
-@media (max-width: 507px){
+ 	@media (max-width: 507px){
  		.phone{
  			margin-top: 0.938em;
  		}
  	}
-.video-list li{
-	margin: 20px;
-}
+ 	.video-list li{
+ 		margin: 20px;
+ 	}
 
